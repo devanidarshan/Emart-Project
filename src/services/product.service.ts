@@ -112,7 +112,7 @@ export default class ProductServices {
     }
 
     // UPDATE PRODUCT
-    updateProduct = async (id: string , body:any) => {
+    updateProduct = async (id: any , body:any) => {
         return await productModel.findByIdAndUpdate(id, {$set: body}, {new: true});
     }
 

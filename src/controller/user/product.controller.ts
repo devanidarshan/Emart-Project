@@ -16,7 +16,7 @@ declare global {
 // GET ALL PRODUCT
 export const getAllProduct = async (req: Request,res: Response) => {
     try {
-        let product  = await productService.getAllProduct({ isDelete:false });
+        let product  = await productService.getAllProduct(req.query);
         res.status(200).json(product);
         } catch (error) {
         console.log(error);

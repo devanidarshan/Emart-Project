@@ -30,7 +30,7 @@ export const addNewProduct = async (req: Request,res: Response) => {
 // GET ALL PRODUCT
 export const getAllProduct = async (req: Request,res: Response) => {
     try {
-        let product  = await productService.getAllProduct({ isDelete:false });
+        let product  = await productService.getAllProduct(req.query);
         res.status(200).json(product);
         } catch (error) {
         console.log(error);
@@ -46,7 +46,7 @@ export const getProduct = async (req: Request,res: Response) => {
         // console.log(review);
         let totalRating = review.reduce((total:number, item:any) => total + item.rating, 0);
         let avgRating = totalRating / review.length;
-        console.log(avgRating);
+        // console.log(avgRating);
         res.status(200).json({product , totalRating:avgRating});
     } catch (error) {
         console.log(error);
@@ -61,7 +61,7 @@ export const updateProduct = async (req: Request,res: Response) => {
         if (!product) {
             return res.status(404).json({ message: `Product is not found..` })
         }
-        product = await productService.updateProduct(product._id, {...req.body});
+        product = await productService.updateProduct(product?._id , {...req.body});
         res.status(202).json({product, message: `Product updated successfully...`});
     } catch (error) {
         console.log(error);
@@ -76,7 +76,7 @@ export const deleteProduct = async (req: Request,res: Response) => {
         if (!product) {
             res.status(404).json({ message: `Product is not found...`});
         }
-        product = await productService.updateProduct(product._id, {isDelete: true });
+        product = await productService.updateProduct(product?._id, {isDelete: true });
         res.status(202).json({product, message: `Product deleted successfully...`});
     } catch (error) {
         console.log(error);
