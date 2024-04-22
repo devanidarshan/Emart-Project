@@ -1,0 +1,4089 @@
+{
+	"info": {
+		"_postman_id": "fe7eae4d-6655-486b-a463-2a8df3559d4e",
+		"name": "Emart-Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29979188"
+	},
+	"item": [
+		{
+			"name": "Admins",
+			"item": [
+				{
+					"name": "Admin",
+					"item": [
+						{
+							"name": "Register Admin",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstName\":\"Darshan\",\r\n    \"lastName\":\"Devani\",\r\n    \"gender\":\"Male\",\r\n    \"email\":\"darshan777@test.in\",\r\n    \"password\":\"12345\",\r\n    \"mobileNo\":7777777777\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}admin/admin/register-Admin",
+									"host": [
+										"{{baseUrl}}admin"
+									],
+									"path": [
+										"admin",
+										"register-Admin"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Register Admin",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"firstName\":\"Darshan\",\r\n    \"lastName\":\"Devani\",\r\n    \"gender\":\"Male\",\r\n    \"email\":\"darshan777@test.in\",\r\n    \"password\":\"12345\",\r\n    \"mobileNo\":7777777777\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:7777/api/admin/admin/register-Admin",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"admin",
+												"admin",
+												"register-Admin"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "380"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"17c-G1NqtrgdlmMp8o0D1bqAls16Wkw\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 12 Apr 2024 11:13:09 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"admin\": {\n        \"firstName\": \"Darshan\",\n        \"lastName\": \"Devani\",\n        \"gender\": \"Male\",\n        \"email\": \"darshan777@test.in\",\n        \"password\": \"$2b$10$0m7ZZdkRPhOfMCejPo6x/OHj4A0aFbfMN5Pk4CYj.fS5Doe.i6Va2\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": true,\n        \"_id\": \"66191745a2fc4a945e184628\",\n        \"createdAt\": \"2024-04-12T11:13:09.815Z\",\n        \"updatedAt\": \"2024-04-12T11:13:09.815Z\"\n    },\n    \"message\": \"Admin is Added Successfully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Login Admin",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n     \"email\":\"darshan777@test.in\",\r\n    \"password\":\"12345\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}admin/admin/login-Admin",
+									"host": [
+										"{{baseUrl}}admin"
+									],
+									"path": [
+										"admin",
+										"login-Admin"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Login Admin",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n     \"email\":\"darshan777@test.in\",\r\n    \"password\":\"12345\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:7777/api/admin/admin/login-Admin",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"admin",
+												"admin",
+												"login-Admin"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "206"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"ce-/BykJMcW6qOXYtZtkIVxX6q+F9Y\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 12 Apr 2024 11:18:00 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjYxOTE3NDVhMmZjNGE5NDVlMTg0NjI4IiwiaWF0IjoxNzEyOTIwNjgwfQ.0B2Ds-UA3mvzIqCdfdAxxolwPE330sC8T4bzqYnPWUk\",\n    \"message\": \"Admin Login SuccesFully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Get All Admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Admin-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}admin/admin/get-All-Admin",
+									"host": [
+										"{{baseUrl}}admin"
+									],
+									"path": [
+										"admin",
+										"get-All-Admin"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Admin",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7777/api/admin/admin/get-All-Admin",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"admin",
+												"admin",
+												"get-All-Admin"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1631"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"65f-YbyBbpBqDirLy9PzP9QaUI/mWDk\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 12 Apr 2024 12:34:59 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"66191745a2fc4a945e184628\",\n        \"firstName\": \"Darshan\",\n        \"lastName\": \"Devani\",\n        \"gender\": \"Male\",\n        \"email\": \"darshan777@test.in\",\n        \"password\": \"$2b$10$0m7ZZdkRPhOfMCejPo6x/OHj4A0aFbfMN5Pk4CYj.fS5Doe.i6Va2\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": true,\n        \"createdAt\": \"2024-04-12T11:13:09.815Z\",\n        \"updatedAt\": \"2024-04-12T11:13:09.815Z\"\n    },\n    {\n        \"_id\": \"661918b07af095bc7f033091\",\n        \"firstName\": \"Alexa\",\n        \"lastName\": \"Alexia\",\n        \"gender\": \"Female\",\n        \"email\": \"alexa777@test.in\",\n        \"password\": \"$2b$10$S8PpeD4HuFKUuK0mSbgOpeYg1LgegSDzsA16tM72Vh2zqrVemFnSu\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": true,\n        \"createdAt\": \"2024-04-12T11:19:12.816Z\",\n        \"updatedAt\": \"2024-04-12T11:19:12.816Z\"\n    },\n    {\n        \"_id\": \"661918de7af095bc7f033095\",\n        \"firstName\": \"Ruby\",\n        \"lastName\": \"Rose\",\n        \"gender\": \"Female\",\n        \"email\": \"ruby777@test.in\",\n        \"password\": \"$2b$10$t3yKavsVnnZ4PM08GjfL/ujxC9bML6K0Xuq2rrnq6QivLlyeks7x6\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": true,\n        \"createdAt\": \"2024-04-12T11:19:58.327Z\",\n        \"updatedAt\": \"2024-04-12T11:19:58.327Z\"\n    },\n    {\n        \"_id\": \"661919067af095bc7f033099\",\n        \"firstName\": \"Teresa\",\n        \"lastName\": \"Luice\",\n        \"gender\": \"Female\",\n        \"email\": \"teresa777@test.in\",\n        \"password\": \"$2b$10$3DRKWpmq08TH8F7Aiy2caeuKbmd2Fi9Ad8x2E8/icoRqjQzDmzm7m\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": true,\n        \"createdAt\": \"2024-04-12T11:20:38.700Z\",\n        \"updatedAt\": \"2024-04-12T11:20:38.700Z\"\n    },\n    {\n        \"_id\": \"661919257af095bc7f03309d\",\n        \"firstName\": \"Maria\",\n        \"lastName\": \"Thomson\",\n        \"gender\": \"Female\",\n        \"email\": \"maria777@test.in\",\n        \"password\": \"$2b$10$zjFnSwtGjlLQg0eR8.liYujrkwQkJ0JQ8HskNmAtWmVqeOqr3UcCy\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": true,\n        \"createdAt\": \"2024-04-12T11:21:09.083Z\",\n        \"updatedAt\": \"2024-04-12T11:21:09.083Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "Get Specific Admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Admin-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}admin/admin/get-Admin?adminId=66191745a2fc4a945e184628",
+									"host": [
+										"{{baseUrl}}admin"
+									],
+									"path": [
+										"admin",
+										"get-Admin"
+									],
+									"query": [
+										{
+											"key": "adminId",
+											"value": "66191745a2fc4a945e184628"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Specific Admin",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7777/api/admin/admin/get-Admin?adminId=66191745a2fc4a945e184628",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"admin",
+												"admin",
+												"get-Admin"
+											],
+											"query": [
+												{
+													"key": "adminId",
+													"value": "66191745a2fc4a945e184628"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "327"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"147-fSBduFqSBtxmsacEoy77CXTduVw\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 12 Apr 2024 12:43:28 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"66191745a2fc4a945e184628\",\n    \"firstName\": \"Darshan\",\n    \"lastName\": \"Devani\",\n    \"gender\": \"Male\",\n    \"email\": \"darshan777@test.in\",\n    \"password\": \"$2b$10$0m7ZZdkRPhOfMCejPo6x/OHj4A0aFbfMN5Pk4CYj.fS5Doe.i6Va2\",\n    \"mobileNo\": 7777777777,\n    \"isDelete\": false,\n    \"isAdmin\": true,\n    \"createdAt\": \"2024-04-12T11:13:09.815Z\",\n    \"updatedAt\": \"2024-04-12T11:13:09.815Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Update Admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Admin-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"lastName\":\"Alexiaa\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}admin/admin/update-Admin?adminId=661918b07af095bc7f033091",
+									"host": [
+										"{{baseUrl}}admin"
+									],
+									"path": [
+										"admin",
+										"update-Admin"
+									],
+									"query": [
+										{
+											"key": "adminId",
+											"value": "661918b07af095bc7f033091"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Update Admin",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"lastName\":\"Alexiaa\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:7777/api/admin/admin/update-Admin?adminId=661918b07af095bc7f033091",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"admin",
+												"admin",
+												"update-Admin"
+											],
+											"query": [
+												{
+													"key": "adminId",
+													"value": "661918b07af095bc7f033091"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "378"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"17a-iYnx9ZC1VAEdROVmkuNSzuO68IY\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 12 Apr 2024 12:46:48 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"admin\": {\n        \"_id\": \"661918b07af095bc7f033091\",\n        \"firstName\": \"Alexa\",\n        \"lastName\": \"Alexiaa\",\n        \"gender\": \"Female\",\n        \"email\": \"alexa777@test.in\",\n        \"password\": \"$2b$10$S8PpeD4HuFKUuK0mSbgOpeYg1LgegSDzsA16tM72Vh2zqrVemFnSu\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": true,\n        \"createdAt\": \"2024-04-12T11:19:12.816Z\",\n        \"updatedAt\": \"2024-04-12T12:46:48.432Z\"\n    },\n    \"message\": \"Admin Updated Successfully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete Admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Admin-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}admin/admin/delete-Admin?adminId=661918b07af095bc7f033091",
+									"host": [
+										"{{baseUrl}}admin"
+									],
+									"path": [
+										"admin",
+										"delete-Admin"
+									],
+									"query": [
+										{
+											"key": "adminId",
+											"value": "661918b07af095bc7f033091"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete Admin",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7777/api/admin/admin/delete-Admin?adminId=661918b07af095bc7f033091",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"admin",
+												"admin",
+												"delete-Admin"
+											],
+											"query": [
+												{
+													"key": "adminId",
+													"value": "661918b07af095bc7f033091"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "376"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"178-dfXOiCJsjmJLdBdrUy0uPrzG9Vg\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 12 Apr 2024 12:47:39 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"admin\": {\n        \"_id\": \"661918b07af095bc7f033091\",\n        \"firstName\": \"Alexa\",\n        \"lastName\": \"Alexiaa\",\n        \"gender\": \"Female\",\n        \"email\": \"alexa777@test.in\",\n        \"password\": \"$2b$10$S8PpeD4HuFKUuK0mSbgOpeYg1LgegSDzsA16tM72Vh2zqrVemFnSu\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": true,\n        \"isAdmin\": true,\n        \"createdAt\": \"2024-04-12T11:19:12.816Z\",\n        \"updatedAt\": \"2024-04-12T12:47:39.604Z\"\n    },\n    \"message\": \"Admin Deleted Succesfully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Update Admin Password",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjYxOTE4ZGU3YWYwOTViYzdmMDMzMDk1IiwiaWF0IjoxNzEyOTI2NjkyfQ.AbGI4rCiCvcXTWb8WII9PHhdmREpmJxkxoksS8UKRwM",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"oldPassword\":\"12345\",\r\n    \"newPassword\":\"00000\",\r\n    \"confirmPassword\":\"00000\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}admin/admin/update-Password?adminId=661918de7af095bc7f033095",
+									"host": [
+										"{{baseUrl}}admin"
+									],
+									"path": [
+										"admin",
+										"update-Password"
+									],
+									"query": [
+										{
+											"key": "adminId",
+											"value": "661918de7af095bc7f033095"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Update Admin Password",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"oldPassword\":\"12345\",\r\n    \"newPassword\":\"00000\",\r\n    \"confirmPassword\":\"00000\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:7777/api/admin/admin/update-Password?adminId=661918de7af095bc7f033095",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"admin",
+												"admin",
+												"update-Password"
+											],
+											"query": [
+												{
+													"key": "adminId",
+													"value": "661918de7af095bc7f033095"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "376"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"178-FwWOp7L8pt4SSsTLYlTTRhyawLo\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 12 Apr 2024 12:58:47 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"admin\": {\n        \"_id\": \"661918de7af095bc7f033095\",\n        \"firstName\": \"Ruby\",\n        \"lastName\": \"Rose\",\n        \"gender\": \"Female\",\n        \"email\": \"ruby777@test.in\",\n        \"password\": \"$2b$10$OXoEnGYsuBWgNWzZnHGlL.rOohubevId/p8DNnO/pZ6TNWKTKUXyG\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": true,\n        \"createdAt\": \"2024-04-12T11:19:58.327Z\",\n        \"updatedAt\": \"2024-04-12T12:58:47.276Z\"\n    },\n    \"message\": \"Password changed successfully...\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Products",
+					"item": [
+						{
+							"name": "Add Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Admin-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\":\"Hyaluronic Acid Serum\",\r\n    \"description\":\" Paris introduces Hyaluron Expert Replumping Serum formulated with 1.5% Hyaluronic Acid\",\r\n    \"price\":28,\r\n    \"category\":[\r\n        \"SkinCare\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}admin/product/add-Product",
+									"host": [
+										"{{baseUrl}}admin"
+									],
+									"path": [
+										"product",
+										"add-Product"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Add Product",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"title\":\"Hyaluronic Acid Serum\",\r\n    \"description\":\" Paris introduces Hyaluron Expert Replumping Serum formulated with 1.5% Hyaluronic Acid\",\r\n    \"price\":28,\r\n    \"category\":[\r\n        \"SkinCare\"\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:7777/api/admin/product/add-Product",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"admin",
+												"product",
+												"add-Product"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "354"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"162-ILJGOM48yiB1lWbiBWb4fXowc6k\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 12 Apr 2024 13:46:52 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"product\": {\n        \"title\": \"Hyaluronic Acid Serum\",\n        \"description\": \" Paris introduces Hyaluron Expert Replumping Serum formulated with 1.5% Hyaluronic Acid\",\n        \"price\": 28,\n        \"category\": [\n            \"SkinCare\"\n        ],\n        \"isDelete\": false,\n        \"_id\": \"66193b4cd22f406c9667b5c9\",\n        \"createdAt\": \"2024-04-12T13:46:52.488Z\",\n        \"updatedAt\": \"2024-04-12T13:46:52.488Z\"\n    },\n    \"message\": \"Product Added Successfully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Get Specific Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Admin-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}admin/product/get-Product?productId=66193c8ed22f406c9667b5d5",
+									"host": [
+										"{{baseUrl}}admin"
+									],
+									"path": [
+										"product",
+										"get-Product"
+									],
+									"query": [
+										{
+											"key": "productId",
+											"value": "66193c8ed22f406c9667b5d5"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Specific Product",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7777/api/admin/product/get-Product?productId=66193c8ed22f406c9667b5d5",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"admin",
+												"product",
+												"get-Product"
+											],
+											"query": [
+												{
+													"key": "productId",
+													"value": "66193c8ed22f406c9667b5d5"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "284"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"11c-qSVUQfS9ojpauusC9LZzWqrMDwI\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 15 Apr 2024 13:08:46 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"product\": {\n        \"_id\": \"66193c8ed22f406c9667b5d5\",\n        \"title\": \"iPhone 15 Pro\",\n        \"description\": \"An apple mobile which is nothing like apple.\",\n        \"price\": 1000,\n        \"category\": [\n            \"SmartPhones\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-12T13:52:14.995Z\",\n        \"updatedAt\": \"2024-04-12T14:06:23.576Z\"\n    },\n    \"totalRating\": 4.5\n}"
+								}
+							]
+						},
+						{
+							"name": "Get All Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Admin-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}admin/product/get-All-Product?search=MacBook Pro",
+									"host": [
+										"{{baseUrl}}admin"
+									],
+									"path": [
+										"product",
+										"get-All-Product"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "MacBook Pro"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Product",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}admin/product/get-All-Product?search=MacBook Pro",
+											"host": [
+												"{{baseUrl}}admin"
+											],
+											"path": [
+												"product",
+												"get-All-Product"
+											],
+											"query": [
+												{
+													"key": "search",
+													"value": "MacBook Pro"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "343"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"157-6cbV9+EeiZEaMxJQEjiAsS4XkRI\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 20 Apr 2024 03:14:13 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"totalCounts\": 1,\n    \"totalPages\": 1,\n    \"currentPage\": 1,\n    \"result\": [\n        {\n            \"_id\": \"66193d09d22f406c9667b5e1\",\n            \"title\": \"MacBook Pro\",\n            \"description\": \"MacBook Pro 2021 with mini-LED display may launch between September, November..\",\n            \"price\": 1799,\n            \"category\": [\n                \"Laptops\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-12T13:54:17.688Z\",\n            \"updatedAt\": \"2024-04-12T13:54:17.688Z\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Update Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Admin-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"price\":1000\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}admin/product/update-Product?productId=66193c8ed22f406c9667b5d5",
+									"host": [
+										"{{baseUrl}}admin"
+									],
+									"path": [
+										"product",
+										"update-Product"
+									],
+									"query": [
+										{
+											"key": "productId",
+											"value": "66193c8ed22f406c9667b5d5"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Update Product",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"price\":1000\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:7777/api/admin/product/update-Product?productId=66193c8ed22f406c9667b5d5",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"admin",
+												"product",
+												"update-Product"
+											],
+											"query": [
+												{
+													"key": "productId",
+													"value": "66193c8ed22f406c9667b5d5"
+												}
+											]
+										}
+									},
+									"status": "Accepted",
+									"code": 202,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "308"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"134-mDm6QJa4zKQ7x+kot3Z+wkLIjyo\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 12 Apr 2024 14:06:23 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"product\": {\n        \"_id\": \"66193c8ed22f406c9667b5d5\",\n        \"title\": \"iPhone 15 Pro\",\n        \"description\": \"An apple mobile which is nothing like apple.\",\n        \"price\": 1000,\n        \"category\": [\n            \"SmartPhones\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-12T13:52:14.995Z\",\n        \"updatedAt\": \"2024-04-12T14:06:23.576Z\"\n    },\n    \"message\": \"Product updated successfully.\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Admin-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}admin/product/delete-Product?productId=66193cdbd22f406c9667b5dd",
+									"host": [
+										"{{baseUrl}}admin"
+									],
+									"path": [
+										"product",
+										"delete-Product"
+									],
+									"query": [
+										{
+											"key": "productId",
+											"value": "66193cdbd22f406c9667b5dd"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete Product",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7777/api/admin/product/delete-Product?productId=66193cdbd22f406c9667b5dd",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"admin",
+												"product",
+												"delete-Product"
+											],
+											"query": [
+												{
+													"key": "productId",
+													"value": "66193cdbd22f406c9667b5dd"
+												}
+											]
+										}
+									},
+									"status": "Accepted",
+									"code": 202,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "391"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"187-LEgv31sODWpZTNomci01BHPCM18\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 12 Apr 2024 14:07:27 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"product\": {\n        \"_id\": \"66193cdbd22f406c9667b5dd\",\n        \"title\": \"Huawei P30\",\n        \"description\": \"Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.\",\n        \"price\": 499,\n        \"category\": [\n            \"SmartPhones\"\n        ],\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-12T13:53:31.466Z\",\n        \"updatedAt\": \"2024-04-12T14:07:27.758Z\"\n    },\n    \"message\": \"Product deleted successfully.\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Wishlists",
+					"item": [
+						{
+							"name": "Get All Wishlist",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Admin-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}admin/wishlist/get-All-Wishlist",
+									"host": [
+										"{{baseUrl}}admin"
+									],
+									"path": [
+										"wishlist",
+										"get-All-Wishlist"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Wishlist",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7777/api/admin/wishlist/get-All-Wishlist",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"admin",
+												"wishlist",
+												"get-All-Wishlist"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "603"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"25b-CcDGaHIVTHg248xbJ5KO1gZhVsw\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 15 Apr 2024 11:55:23 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"661d13b2d7570d748b821f3b\",\n        \"user\": \"661932849bc942dc128c6ead\",\n        \"product\": \"66193c8ed22f406c9667b5d5\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-15T11:46:58.858Z\",\n        \"updatedAt\": \"2024-04-15T11:46:58.858Z\"\n    },\n    {\n        \"_id\": \"661d1456d7570d748b821f48\",\n        \"user\": \"661932849bc942dc128c6ead\",\n        \"product\": \"66193dcfd22f406c9667b5f5\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-15T11:49:42.698Z\",\n        \"updatedAt\": \"2024-04-15T11:49:42.698Z\"\n    },\n    {\n        \"_id\": \"661d14dbd7570d748b821f4e\",\n        \"user\": \"661932849bc942dc128c6ead\",\n        \"product\": \"66193ebad22f406c9667b60d\",\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-15T11:51:55.318Z\",\n        \"updatedAt\": \"2024-04-15T11:53:13.199Z\"\n    }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Carts",
+					"item": [
+						{
+							"name": "Get All Cart",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Admin-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}admin/cart/get-All-Cart",
+									"host": [
+										"{{baseUrl}}admin"
+									],
+									"path": [
+										"cart",
+										"get-All-Cart"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Cart",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7777/api/admin/cart/get-All-Cart",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"admin",
+												"cart",
+												"get-All-Cart"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1504"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"5e0-ntVTTogX9Ngy8tQo2N54+E9rDN8\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 15 Apr 2024 11:30:25 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"661d0d8c472205c745193284\",\n        \"user\": {\n            \"_id\": \"661932849bc942dc128c6ead\",\n            \"firstName\": \"Anabelle\",\n            \"lastName\": \"Anthney\",\n            \"gender\": \"Female\",\n            \"email\": \"anabelle777@test.in\",\n            \"password\": \"$2b$10$Ddl2bgvzRMstdp0emkqkiOfAmaLlr5.B3GZv.GTsFVcLL0g8WXzkq\",\n            \"mobileNo\": 7777777777,\n            \"isDelete\": false,\n            \"isAdmin\": false,\n            \"createdAt\": \"2024-04-12T13:09:24.743Z\",\n            \"updatedAt\": \"2024-04-12T13:34:53.160Z\"\n        },\n        \"cartItem\": {\n            \"_id\": \"66193c8ed22f406c9667b5d5\",\n            \"title\": \"iPhone 15 Pro\",\n            \"description\": \"An apple mobile which is nothing like apple.\",\n            \"price\": 1000,\n            \"category\": [\n                \"SmartPhones\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-12T13:52:14.995Z\",\n            \"updatedAt\": \"2024-04-12T14:06:23.576Z\"\n        },\n        \"quantity\": 2,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-15T11:20:44.130Z\",\n        \"updatedAt\": \"2024-04-15T11:20:44.130Z\"\n    },\n    {\n        \"_id\": \"661d0dc6472205c745193289\",\n        \"user\": {\n            \"_id\": \"661932849bc942dc128c6ead\",\n            \"firstName\": \"Anabelle\",\n            \"lastName\": \"Anthney\",\n            \"gender\": \"Female\",\n            \"email\": \"anabelle777@test.in\",\n            \"password\": \"$2b$10$Ddl2bgvzRMstdp0emkqkiOfAmaLlr5.B3GZv.GTsFVcLL0g8WXzkq\",\n            \"mobileNo\": 7777777777,\n            \"isDelete\": false,\n            \"isAdmin\": false,\n            \"createdAt\": \"2024-04-12T13:09:24.743Z\",\n            \"updatedAt\": \"2024-04-12T13:34:53.160Z\"\n        },\n        \"cartItem\": {\n            \"_id\": \"66193dcfd22f406c9667b5f5\",\n            \"title\": \"Brown Perfume\",\n            \"description\": \"Royal_Mirage Sport Brown Perfume for Men & Women..\",\n            \"price\": 90,\n            \"category\": [\n                \"Fragrances\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-12T13:57:35.700Z\",\n            \"updatedAt\": \"2024-04-12T13:57:35.700Z\"\n        },\n        \"quantity\": 2,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-15T11:21:42.458Z\",\n        \"updatedAt\": \"2024-04-15T11:21:42.458Z\"\n    }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Reviews",
+					"item": [
+						{
+							"name": "Get All Review",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Admin-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}admin/review/get-All-Review",
+									"host": [
+										"{{baseUrl}}admin"
+									],
+									"path": [
+										"review",
+										"get-All-Review"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Review",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7777/api/admin/review/get-All-Review",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"admin",
+												"review",
+												"get-All-Review"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "515"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"203-gZ5fWbbdWy59OroIVeIFyqC4GTg\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 15 Apr 2024 13:02:26 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"661d23a5365d2b78512d7eeb\",\n        \"user\": \"661932849bc942dc128c6ead\",\n        \"product\": \"66193dcfd22f406c9667b5f5\",\n        \"rating\": 5,\n        \"comment\": \"Brown Perfume is a Nice Perfume.\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-15T12:55:01.649Z\",\n        \"updatedAt\": \"2024-04-15T12:55:01.649Z\"\n    },\n    {\n        \"_id\": \"661d23f5365d2b78512d7eef\",\n        \"user\": \"661932849bc942dc128c6ead\",\n        \"product\": \"66193c8ed22f406c9667b5d5\",\n        \"rating\": 4.5,\n        \"comment\": \"Latest and Fastest Smartphone.\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-15T12:56:21.562Z\",\n        \"updatedAt\": \"2024-04-15T12:56:21.562Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "Delete Review",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Admin-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}admin/review/delete-Review?Id=661d2424365d2b78512d7ef3",
+									"host": [
+										"{{baseUrl}}admin"
+									],
+									"path": [
+										"review",
+										"delete-Review"
+									],
+									"query": [
+										{
+											"key": "Id",
+											"value": "661d2424365d2b78512d7ef3"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete Review",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7777/api/admin/review/delete-Review?Id=661d2424365d2b78512d7ef3",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"admin",
+												"review",
+												"delete-Review"
+											],
+											"query": [
+												{
+													"key": "Id",
+													"value": "661d2424365d2b78512d7ef3"
+												}
+											]
+										}
+									},
+									"status": "Accepted",
+									"code": 202,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "310"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"136-7TrKVpsPctUNXzakiQgJ4n0GGMs\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 15 Apr 2024 13:07:04 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"review\": {\n        \"_id\": \"661d2424365d2b78512d7ef3\",\n        \"user\": \"661932849bc942dc128c6ead\",\n        \"product\": \"66193e9ad22f406c9667b609\",\n        \"rating\": 4.5,\n        \"comment\": \"Healthy and Sweet Fruitnuts.\",\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-15T12:57:08.562Z\",\n        \"updatedAt\": \"2024-04-15T13:07:04.438Z\"\n    },\n    \"Message\": \"Review is Deleted SuccessFully...\"\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "Register User",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstName\":\"Anabelle\",\r\n    \"lastName\":\"Anthney\",\r\n    \"gender\":\"Female\",\r\n    \"email\":\"anabelle777@test.in\",\r\n    \"password\":\"12345\",\r\n    \"mobileNo\":7777777777\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}user/user/register-User",
+									"host": [
+										"{{baseUrl}}user"
+									],
+									"path": [
+										"user",
+										"register-User"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Register User",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"firstName\":\"Anabelle\",\r\n    \"lastName\":\"Anthney\",\r\n    \"gender\":\"Female\",\r\n    \"email\":\"anabelle777@test.in\",\r\n    \"password\":\"12345\",\r\n    \"mobileNo\":7777777777\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:7777/api/user/user/register-User",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"user",
+												"user",
+												"register-User"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "388"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"184-pmF+JX+1R6zPAMOadBR1ap2TpTI\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 12 Apr 2024 13:09:24 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"admin\": {\n        \"firstName\": \"Anabelle\",\n        \"lastName\": \"Anthney\",\n        \"gender\": \"Female\",\n        \"email\": \"anabelle777@test.in\",\n        \"password\": \"$2b$10$nJDT1opwowAqzXNb7Xl/GeEaaLdOe3x0eGEXPUDbPq5G6rb5bbmUy\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"_id\": \"661932849bc942dc128c6ead\",\n        \"createdAt\": \"2024-04-12T13:09:24.743Z\",\n        \"updatedAt\": \"2024-04-12T13:09:24.743Z\"\n    },\n    \"message\": \"New User Is Added SuccesFully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Login User",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"denver777@test.in\",\r\n    \"password\":77777\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}user/user/login-User",
+									"host": [
+										"{{baseUrl}}user"
+									],
+									"path": [
+										"user",
+										"login-User"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Login User",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n     \"email\":\"anabelle777@test.in\",\r\n    \"password\":\"12345\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:7777/api/user/user/login-User",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"user",
+												"user",
+												"login-User"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "203"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"cb-p/JnAXKSkS373U+nEXmg24YvtJs\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 12 Apr 2024 13:29:37 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjE5MzI4NDliYzk0MmRjMTI4YzZlYWQiLCJpYXQiOjE3MTI5Mjg1Nzd9.b93o9KilNC5Fz1aw0uR8EYYhclMjzrxue-WTQLrFisY\",\n    \"message\": \"User Login SuccesFully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Get All User",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{User-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}user/user/get-All-User",
+									"host": [
+										"{{baseUrl}}user"
+									],
+									"path": [
+										"user",
+										"get-All-User"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All User",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7777/api/user/user/get-All-User",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"user",
+												"user",
+												"get-All-User"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "4893"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"131d-4pDwc0xnd1IE0jP/J/3/fS+pSY0\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 12 Apr 2024 13:22:33 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"661932849bc942dc128c6ead\",\n        \"firstName\": \"Anabelle\",\n        \"lastName\": \"Anthney\",\n        \"gender\": \"Female\",\n        \"email\": \"anabelle777@test.in\",\n        \"password\": \"$2b$10$nJDT1opwowAqzXNb7Xl/GeEaaLdOe3x0eGEXPUDbPq5G6rb5bbmUy\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-12T13:09:24.743Z\",\n        \"updatedAt\": \"2024-04-12T13:09:24.743Z\"\n    },\n    {\n        \"_id\": \"661933219bc942dc128c6eb3\",\n        \"firstName\": \"Justin\",\n        \"lastName\": \"D-cruzz\",\n        \"gender\": \"Male\",\n        \"email\": \"justin777@test.in\",\n        \"password\": \"$2b$10$W5cvAeXIlIJs4cUZtBYwIeVpNYo.6evTVFGd8w3TC4EB36mmcdeEy\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-12T13:12:01.185Z\",\n        \"updatedAt\": \"2024-04-12T13:12:01.185Z\"\n    },\n    {\n        \"_id\": \"6619334f9bc942dc128c6eb7\",\n        \"firstName\": \"Peter\",\n        \"lastName\": \"Lara\",\n        \"gender\": \"Male\",\n        \"email\": \"peter777@test.in\",\n        \"password\": \"$2b$10$CY24tB3gf7pyUl1QFWgeP.m6g/GvrbLygZwO0J.pSTYg.tk5zNLeu\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-12T13:12:47.362Z\",\n        \"updatedAt\": \"2024-04-12T13:12:47.362Z\"\n    },\n    {\n        \"_id\": \"6619337c9bc942dc128c6ebb\",\n        \"firstName\": \"Adam\",\n        \"lastName\": \"Leo\",\n        \"gender\": \"Male\",\n        \"email\": \"adam777@test.in\",\n        \"password\": \"$2b$10$QLZi2MFJUuMiW0LTa3Sxb.Ycpg9JCqkAzeiZkbqmPKspSgaprP98q\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-12T13:13:32.971Z\",\n        \"updatedAt\": \"2024-04-12T13:13:32.971Z\"\n    },\n    {\n        \"_id\": \"6619339c9bc942dc128c6ebf\",\n        \"firstName\": \"Sara\",\n        \"lastName\": \"Martin\",\n        \"gender\": \"Female\",\n        \"email\": \"sara777@test.in\",\n        \"password\": \"$2b$10$LzaaZHz3m1mNi5SuM13tgOyrnRtHgoVDKqcmW4Q4LQqv1nN.axLFq\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-12T13:14:04.447Z\",\n        \"updatedAt\": \"2024-04-12T13:14:04.447Z\"\n    },\n    {\n        \"_id\": \"661933ba9bc942dc128c6ec3\",\n        \"firstName\": \"Rubina\",\n        \"lastName\": \"Rosie\",\n        \"gender\": \"Female\",\n        \"email\": \"rubina777@test.in\",\n        \"password\": \"$2b$10$iia2L2vliJl1tzLV1j3m2eIFkI4K4XCGLW0XgQe19qLV0zY1ZK1Bm\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-12T13:14:34.654Z\",\n        \"updatedAt\": \"2024-04-12T13:14:34.654Z\"\n    },\n    {\n        \"_id\": \"661933e79bc942dc128c6ec7\",\n        \"firstName\": \"Jecki\",\n        \"lastName\": \"Jackson\",\n        \"gender\": \"Male\",\n        \"email\": \"jecki777@test.in\",\n        \"password\": \"$2b$10$PqpJJFRRQ3c66uT1ahOW4.5lu/1uPePmMeSivAeE6V0A5KnY1Lt4q\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-12T13:15:19.174Z\",\n        \"updatedAt\": \"2024-04-12T13:15:19.174Z\"\n    },\n    {\n        \"_id\": \"6619341e9bc942dc128c6ecb\",\n        \"firstName\": \"Nyraa\",\n        \"lastName\": \"Teresa\",\n        \"gender\": \"Female\",\n        \"email\": \"nyraa777@test.in\",\n        \"password\": \"$2b$10$E/y3xMYBtOQ8362hk4RZ9.iDkC3YSb6pDTdJIs.pNcBix27wXzR7W\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-12T13:16:14.072Z\",\n        \"updatedAt\": \"2024-04-12T13:16:14.072Z\"\n    },\n    {\n        \"_id\": \"661934509bc942dc128c6ecf\",\n        \"firstName\": \"Jenny\",\n        \"lastName\": \"Johnson\",\n        \"gender\": \"Female\",\n        \"email\": \"jenny777@test.in\",\n        \"password\": \"$2b$10$GpYg0hZHOJmXQoy4MPUEv.Az.QGIjPk5H53FSVqISmciA789.XDw.\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-12T13:17:04.632Z\",\n        \"updatedAt\": \"2024-04-12T13:17:04.632Z\"\n    },\n    {\n        \"_id\": \"6619347b9bc942dc128c6ed3\",\n        \"firstName\": \"Piyu\",\n        \"lastName\": \"Mavani\",\n        \"gender\": \"Female\",\n        \"email\": \"piyu777@test.in\",\n        \"password\": \"$2b$10$yb5QaVLe2S1XltZOeJZIzeUrY51u5GJ7tsrUckFv3hEp71dTohajC\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-12T13:17:47.760Z\",\n        \"updatedAt\": \"2024-04-12T13:17:47.760Z\"\n    },\n    {\n        \"_id\": \"661934a89bc942dc128c6ed7\",\n        \"firstName\": \"Bella\",\n        \"lastName\": \"Ciaoo\",\n        \"gender\": \"Female\",\n        \"email\": \"bella777@test.in\",\n        \"password\": \"$2b$10$MDnVATORHILGNlm5fA/DTug/3ps/98ibfTZcLh3ppkxz.hAL9ws.2\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-12T13:18:32.216Z\",\n        \"updatedAt\": \"2024-04-12T13:18:32.216Z\"\n    },\n    {\n        \"_id\": \"661934cd9bc942dc128c6edb\",\n        \"firstName\": \"Kyara\",\n        \"lastName\": \"Kine\",\n        \"gender\": \"Female\",\n        \"email\": \"kyara777@test.in\",\n        \"password\": \"$2b$10$fqf6iI7C4fVbxlpQ0q4hPOrBjnrac5o/dRXa3mMim4HjKrDc/d7Im\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-12T13:19:09.512Z\",\n        \"updatedAt\": \"2024-04-12T13:19:09.512Z\"\n    },\n    {\n        \"_id\": \"661934fb9bc942dc128c6edf\",\n        \"firstName\": \"Marry\",\n        \"lastName\": \"Meww\",\n        \"gender\": \"Female\",\n        \"email\": \"marry777@test.in\",\n        \"password\": \"$2b$10$RuQucX6fiOyA10Qa1L/lxOKGZ/PigdbjEAFRRiwEvV4abXpk2Alxy\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-12T13:19:55.868Z\",\n        \"updatedAt\": \"2024-04-12T13:19:55.868Z\"\n    },\n    {\n        \"_id\": \"661935219bc942dc128c6ee3\",\n        \"firstName\": \"Kelvin\",\n        \"lastName\": \"Clain\",\n        \"gender\": \"Male\",\n        \"email\": \"kelvin777@test.in\",\n        \"password\": \"$2b$10$06A/VKXAzR/4.3fvV2TLzuzBqyZdlXhxtvsB4CgsW0J5WJbjgZXxq\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-12T13:20:33.762Z\",\n        \"updatedAt\": \"2024-04-12T13:20:33.762Z\"\n    },\n    {\n        \"_id\": \"661935599bc942dc128c6ee7\",\n        \"firstName\": \"Denver\",\n        \"lastName\": \"Clara\",\n        \"gender\": \"Male\",\n        \"email\": \"denver777@test.in\",\n        \"password\": \"$2b$10$EYmRmgZ7ojsy03AKiu22A.6qXT6d6RQOn/Z34gYOea7HywGUb.j1O\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-12T13:21:29.995Z\",\n        \"updatedAt\": \"2024-04-12T13:21:29.995Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "Get Specific User",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{User-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}user/user/get-User?userId=661932849bc942dc128c6ead",
+									"host": [
+										"{{baseUrl}}user"
+									],
+									"path": [
+										"user",
+										"get-User"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "661932849bc942dc128c6ead"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Specific User",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7777/api/user/user/get-User?userId=661932849bc942dc128c6ead",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"user",
+												"user",
+												"get-User"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "661932849bc942dc128c6ead"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "333"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"14d-nep2nd5uU27WIJedMDoFqo3YbxE\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 12 Apr 2024 13:30:23 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"661932849bc942dc128c6ead\",\n    \"firstName\": \"Anabelle\",\n    \"lastName\": \"Anthney\",\n    \"gender\": \"Female\",\n    \"email\": \"anabelle777@test.in\",\n    \"password\": \"$2b$10$nJDT1opwowAqzXNb7Xl/GeEaaLdOe3x0eGEXPUDbPq5G6rb5bbmUy\",\n    \"mobileNo\": 7777777777,\n    \"isDelete\": false,\n    \"isAdmin\": false,\n    \"createdAt\": \"2024-04-12T13:09:24.743Z\",\n    \"updatedAt\": \"2024-04-12T13:09:24.743Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Update User",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{User-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"lastName\":\"D-cruzzz\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}user/user/update-User?userId=661933219bc942dc128c6eb3",
+									"host": [
+										"{{baseUrl}}user"
+									],
+									"path": [
+										"user",
+										"update-User"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "661933219bc942dc128c6eb3"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Update User",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"lastName\":\"D-cruzzz\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:7777/api/user/user/update-User?userId=661933219bc942dc128c6eb3",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"user",
+												"user",
+												"update-User"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "661933219bc942dc128c6eb3"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "378"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"17a-kjwZYpcOfvbZFhpqc4UR8BduR7U\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 12 Apr 2024 13:32:10 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"user\": {\n        \"_id\": \"661933219bc942dc128c6eb3\",\n        \"firstName\": \"Justin\",\n        \"lastName\": \"D-cruzzz\",\n        \"gender\": \"Male\",\n        \"email\": \"justin777@test.in\",\n        \"password\": \"$2b$10$W5cvAeXIlIJs4cUZtBYwIeVpNYo.6evTVFGd8w3TC4EB36mmcdeEy\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-12T13:12:01.185Z\",\n        \"updatedAt\": \"2024-04-12T13:32:10.866Z\"\n    },\n    \"message\": \"User Updated Successfully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete User",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{User-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}user/user/delete-User?userId=6619334f9bc942dc128c6eb7",
+									"host": [
+										"{{baseUrl}}user"
+									],
+									"path": [
+										"user",
+										"delete-User"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "6619334f9bc942dc128c6eb7"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete User",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7777/api/user/user/delete-User?userId=6619334f9bc942dc128c6eb7",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"user",
+												"user",
+												"delete-User"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "6619334f9bc942dc128c6eb7"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "370"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"172-lxpQwX4657hgHN0MBW15N6E6v68\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 12 Apr 2024 13:33:09 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"user\": {\n        \"_id\": \"6619334f9bc942dc128c6eb7\",\n        \"firstName\": \"Peter\",\n        \"lastName\": \"Lara\",\n        \"gender\": \"Male\",\n        \"email\": \"peter777@test.in\",\n        \"password\": \"$2b$10$CY24tB3gf7pyUl1QFWgeP.m6g/GvrbLygZwO0J.pSTYg.tk5zNLeu\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": true,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-12T13:12:47.362Z\",\n        \"updatedAt\": \"2024-04-12T13:33:09.407Z\"\n    },\n    \"message\": \"User Deleted Succesfully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Update User Password",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjE5MzMyMTliYzk0MmRjMTI4YzZlYjMiLCJpYXQiOjE3MTI5Mjg5MTV9.j9VlyfhUBbqra2gu4dz4BtA7dMKjXMmg3Nsv3KQyC3c",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"oldPassword\":\"12345\",\r\n    \"newPassword\":\"00000\",\r\n    \"confirmPassword\":\"00000\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}user/user/update-Password?userId=661933219bc942dc128c6eb3",
+									"host": [
+										"{{baseUrl}}user"
+									],
+									"path": [
+										"user",
+										"update-Password"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "661933219bc942dc128c6eb3"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Update User Password",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"oldPassword\":\"12345\",\r\n    \"newPassword\":\"00000\",\r\n    \"confirmPassword\":\"00000\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:7777/api/user/user/update-Password?userId=661933219bc942dc128c6eb3",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"user",
+												"user",
+												"update-Password"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "661933219bc942dc128c6eb3"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "382"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"17e-Z3tYSTdhX3RHAI4J2h0IcK0r9aQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 12 Apr 2024 13:35:34 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"user\": {\n        \"_id\": \"661933219bc942dc128c6eb3\",\n        \"firstName\": \"Justin\",\n        \"lastName\": \"D-cruzzz\",\n        \"gender\": \"Male\",\n        \"email\": \"justin777@test.in\",\n        \"password\": \"$2b$10$cu//xi3FP9608mLVGIkbROX16eTuWweVy6M58WRAjMnQ.1xi5ob9.\",\n        \"mobileNo\": 7777777777,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-12T13:12:01.185Z\",\n        \"updatedAt\": \"2024-04-12T13:35:34.007Z\"\n    },\n    \"message\": \"Password changed successfully...\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Products",
+					"item": [
+						{
+							"name": "Get All Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{User-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}user/product/get-All-Product?search=Fragrances",
+									"host": [
+										"{{baseUrl}}user"
+									],
+									"path": [
+										"product",
+										"get-All-Product"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "Fragrances"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Product",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}user/product/get-All-Product?search=Fragrances",
+											"host": [
+												"{{baseUrl}}user"
+											],
+											"path": [
+												"product",
+												"get-All-Product"
+											],
+											"query": [
+												{
+													"key": "search",
+													"value": "Fragrances"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1565"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"61d-nGtm99THkpmpjxhm+wasCSqLBIc\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 20 Apr 2024 12:08:04 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"totalCounts\": 5,\n    \"totalPages\": 1,\n    \"currentPage\": 1,\n    \"result\": [\n        {\n            \"_id\": \"66193dafd22f406c9667b5f1\",\n            \"title\": \"perfume Oil\",\n            \"description\": \"Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil..\",\n            \"price\": 40,\n            \"category\": [\n                \"Fragrances\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-12T13:57:03.060Z\",\n            \"updatedAt\": \"2024-04-12T13:57:03.060Z\"\n        },\n        {\n            \"_id\": \"66193dcfd22f406c9667b5f5\",\n            \"title\": \"Brown Perfume\",\n            \"description\": \"Royal_Mirage Sport Brown Perfume for Men & Women..\",\n            \"price\": 90,\n            \"category\": [\n                \"Fragrances\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-12T13:57:35.700Z\",\n            \"updatedAt\": \"2024-04-12T13:57:35.700Z\"\n        },\n        {\n            \"_id\": \"66193df2d22f406c9667b5f9\",\n            \"title\": \"Fog Scent Xpressio Perfume\",\n            \"description\": \"Product details of Best Fog Scent Xpressio Perfume 100ml For Men cool long lasting perfumes..\",\n            \"price\": 230,\n            \"category\": [\n                \"Fragrances\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-12T13:58:10.602Z\",\n            \"updatedAt\": \"2024-04-12T13:58:10.602Z\"\n        },\n        {\n            \"_id\": \"66193e12d22f406c9667b5fd\",\n            \"title\": \"Non-Alcoholic Concentrated Perfume Oil\",\n            \"description\": \"Original Al Munakh® by Mahal Al Musk | Our Impression of Climate | 6ml Non-Alcoholic Concentrated Perfume Oil..\",\n            \"price\": 390,\n            \"category\": [\n                \"Fragrances\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-12T13:58:42.903Z\",\n            \"updatedAt\": \"2024-04-12T13:58:42.903Z\"\n        },\n        {\n            \"_id\": \"66193e35d22f406c9667b601\",\n            \"title\": \"Eau De Perfume Spray\",\n            \"description\": \"Genuine  Al-Rehab spray perfume from UAE/Saudi Arabia/Yemen High Quality..\",\n            \"price\": 490,\n            \"category\": [\n                \"Fragrances\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-12T13:59:17.053Z\",\n            \"updatedAt\": \"2024-04-12T13:59:17.053Z\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Get Specific Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{User-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}user/product/get-Product?productId=66193c8ed22f406c9667b5d5",
+									"host": [
+										"{{baseUrl}}user"
+									],
+									"path": [
+										"product",
+										"get-Product"
+									],
+									"query": [
+										{
+											"key": "productId",
+											"value": "66193c8ed22f406c9667b5d5"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Specific  Product",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7777/api/user/product/get-Product?productId=66193c8ed22f406c9667b5d5",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"user",
+												"product",
+												"get-Product"
+											],
+											"query": [
+												{
+													"key": "productId",
+													"value": "66193c8ed22f406c9667b5d5"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "284"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"11c-qSVUQfS9ojpauusC9LZzWqrMDwI\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 15 Apr 2024 13:11:04 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"product\": {\n        \"_id\": \"66193c8ed22f406c9667b5d5\",\n        \"title\": \"iPhone 15 Pro\",\n        \"description\": \"An apple mobile which is nothing like apple.\",\n        \"price\": 1000,\n        \"category\": [\n            \"SmartPhones\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-12T13:52:14.995Z\",\n        \"updatedAt\": \"2024-04-12T14:06:23.576Z\"\n    },\n    \"totalRating\": 4.5\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Wishlists",
+					"item": [
+						{
+							"name": "Add New Wishlist",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{User-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"product\":\"66193dcfd22f406c9667b5f5\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}user/wishlist/add-New-Wishlist",
+									"host": [
+										"{{baseUrl}}user"
+									],
+									"path": [
+										"wishlist",
+										"add-New-Wishlist"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Add New Wishlist",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"product\":\"66193dcfd22f406c9667b5f5\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:7777/api/user/wishlist/add-New-Wishlist",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"user",
+												"wishlist",
+												"add-New-Wishlist"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "246"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"f6-qaNrzVp+twXAjgC+JYMceEA/Pec\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 15 Apr 2024 11:44:02 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"wishlist\": {\n        \"user\": \"661932849bc942dc128c6ead\",\n        \"product\": \"66193dcfd22f406c9667b5f5\",\n        \"isDelete\": false,\n        \"_id\": \"661d130297047d7e22ff05d2\",\n        \"createdAt\": \"2024-04-15T11:44:02.736Z\",\n        \"updatedAt\": \"2024-04-15T11:44:02.736Z\"\n    },\n    \"Message\": \"Wishlist is Added...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Get All Wishlist",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{User-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}user/wishlist/get-All-Wishlist",
+									"host": [
+										"{{baseUrl}}user"
+									],
+									"path": [
+										"wishlist",
+										"get-All-Wishlist"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Wishlist",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7777/api/user/wishlist/get-All-Wishlist",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"user",
+												"wishlist",
+												"get-All-Wishlist"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "403"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"193-PczGFdb+er0MxrbXAgl2EXVlhqU\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 15 Apr 2024 11:51:07 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"661d13b2d7570d748b821f3b\",\n        \"user\": \"661932849bc942dc128c6ead\",\n        \"product\": \"66193c8ed22f406c9667b5d5\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-15T11:46:58.858Z\",\n        \"updatedAt\": \"2024-04-15T11:46:58.858Z\"\n    },\n    {\n        \"_id\": \"661d1456d7570d748b821f48\",\n        \"user\": \"661932849bc942dc128c6ead\",\n        \"product\": \"66193dcfd22f406c9667b5f5\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-15T11:49:42.698Z\",\n        \"updatedAt\": \"2024-04-15T11:49:42.698Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "Delete Wishlist",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{User-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}user/wishlist/delete-Wishlist?Id=661d14dbd7570d748b821f4e",
+									"host": [
+										"{{baseUrl}}user"
+									],
+									"path": [
+										"wishlist",
+										"delete-Wishlist"
+									],
+									"query": [
+										{
+											"key": "Id",
+											"value": "661d14dbd7570d748b821f4e"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete Wishlist",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7777/api/user/wishlist/delete-Wishlist?Id=661d14dbd7570d748b821f4e",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"user",
+												"wishlist",
+												"delete-Wishlist"
+											],
+											"query": [
+												{
+													"key": "Id",
+													"value": "661d14dbd7570d748b821f4e"
+												}
+											]
+										}
+									},
+									"status": "Accepted",
+									"code": 202,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "247"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"f7-2/Q+f8ekPqpABMvyLnR0P7FK2Hw\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 15 Apr 2024 11:53:13 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"wishlist\": {\n        \"_id\": \"661d14dbd7570d748b821f4e\",\n        \"user\": \"661932849bc942dc128c6ead\",\n        \"product\": \"66193ebad22f406c9667b60d\",\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-15T11:51:55.318Z\",\n        \"updatedAt\": \"2024-04-15T11:53:13.199Z\"\n    },\n    \"Message\": \"Wishlist is Deleted...\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Carts",
+					"item": [
+						{
+							"name": "Add To Cart",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{User-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cartItem\":\"66193c8ed22f406c9667b5d5\",\r\n    \"quantity\":2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}user/cart/add-To-Cart",
+									"host": [
+										"{{baseUrl}}user"
+									],
+									"path": [
+										"cart",
+										"add-To-Cart"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Add To Cart",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"cartItem\":\"66193c8ed22f406c9667b5d5\",\r\n    \"quantity\":2\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:7777/api/user/cart/add-To-Cart",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"user",
+												"cart",
+												"add-To-Cart"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "262"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"106-FmEWvRGIQH3mwAXGGWgGCVZWG2g\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 15 Apr 2024 11:20:44 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"cart\": {\n        \"user\": \"661932849bc942dc128c6ead\",\n        \"cartItem\": \"66193c8ed22f406c9667b5d5\",\n        \"quantity\": 2,\n        \"isDelete\": false,\n        \"_id\": \"661d0d8c472205c745193284\",\n        \"createdAt\": \"2024-04-15T11:20:44.130Z\",\n        \"updatedAt\": \"2024-04-15T11:20:44.130Z\"\n    },\n    \"message\": \"Cart Added successfully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Get All Cart",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{User-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}user/cart/get-All-Cart",
+									"host": [
+										"{{baseUrl}}user"
+									],
+									"path": [
+										"cart",
+										"get-All-Cart"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Cart",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7777/api/user/cart/get-All-Cart",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"user",
+												"cart",
+												"get-All-Cart"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "2283"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"8eb-AME1qfko455UKlTCj+KmMEAnKw8\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 15 Apr 2024 11:24:06 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"661d0d8c472205c745193284\",\n        \"user\": {\n            \"_id\": \"661932849bc942dc128c6ead\",\n            \"firstName\": \"Anabelle\",\n            \"lastName\": \"Anthney\",\n            \"gender\": \"Female\",\n            \"email\": \"anabelle777@test.in\",\n            \"password\": \"$2b$10$Ddl2bgvzRMstdp0emkqkiOfAmaLlr5.B3GZv.GTsFVcLL0g8WXzkq\",\n            \"mobileNo\": 7777777777,\n            \"isDelete\": false,\n            \"isAdmin\": false,\n            \"createdAt\": \"2024-04-12T13:09:24.743Z\",\n            \"updatedAt\": \"2024-04-12T13:34:53.160Z\"\n        },\n        \"cartItem\": {\n            \"_id\": \"66193c8ed22f406c9667b5d5\",\n            \"title\": \"iPhone 15 Pro\",\n            \"description\": \"An apple mobile which is nothing like apple.\",\n            \"price\": 1000,\n            \"category\": [\n                \"SmartPhones\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-12T13:52:14.995Z\",\n            \"updatedAt\": \"2024-04-12T14:06:23.576Z\"\n        },\n        \"quantity\": 2,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-15T11:20:44.130Z\",\n        \"updatedAt\": \"2024-04-15T11:20:44.130Z\"\n    },\n    {\n        \"_id\": \"661d0dc6472205c745193289\",\n        \"user\": {\n            \"_id\": \"661932849bc942dc128c6ead\",\n            \"firstName\": \"Anabelle\",\n            \"lastName\": \"Anthney\",\n            \"gender\": \"Female\",\n            \"email\": \"anabelle777@test.in\",\n            \"password\": \"$2b$10$Ddl2bgvzRMstdp0emkqkiOfAmaLlr5.B3GZv.GTsFVcLL0g8WXzkq\",\n            \"mobileNo\": 7777777777,\n            \"isDelete\": false,\n            \"isAdmin\": false,\n            \"createdAt\": \"2024-04-12T13:09:24.743Z\",\n            \"updatedAt\": \"2024-04-12T13:34:53.160Z\"\n        },\n        \"cartItem\": {\n            \"_id\": \"66193dcfd22f406c9667b5f5\",\n            \"title\": \"Brown Perfume\",\n            \"description\": \"Royal_Mirage Sport Brown Perfume for Men & Women..\",\n            \"price\": 90,\n            \"category\": [\n                \"Fragrances\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-12T13:57:35.700Z\",\n            \"updatedAt\": \"2024-04-12T13:57:35.700Z\"\n        },\n        \"quantity\": 2,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-15T11:21:42.458Z\",\n        \"updatedAt\": \"2024-04-15T11:21:42.458Z\"\n    },\n    {\n        \"_id\": \"661d0e0a472205c74519328e\",\n        \"user\": {\n            \"_id\": \"661932849bc942dc128c6ead\",\n            \"firstName\": \"Anabelle\",\n            \"lastName\": \"Anthney\",\n            \"gender\": \"Female\",\n            \"email\": \"anabelle777@test.in\",\n            \"password\": \"$2b$10$Ddl2bgvzRMstdp0emkqkiOfAmaLlr5.B3GZv.GTsFVcLL0g8WXzkq\",\n            \"mobileNo\": 7777777777,\n            \"isDelete\": false,\n            \"isAdmin\": false,\n            \"createdAt\": \"2024-04-12T13:09:24.743Z\",\n            \"updatedAt\": \"2024-04-12T13:34:53.160Z\"\n        },\n        \"cartItem\": {\n            \"_id\": \"66193d09d22f406c9667b5e1\",\n            \"title\": \"MacBook Pro\",\n            \"description\": \"MacBook Pro 2021 with mini-LED display may launch between September, November..\",\n            \"price\": 1799,\n            \"category\": [\n                \"Laptops\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-12T13:54:17.688Z\",\n            \"updatedAt\": \"2024-04-12T13:54:17.688Z\"\n        },\n        \"quantity\": 3,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-15T11:22:50.040Z\",\n        \"updatedAt\": \"2024-04-15T11:22:50.040Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "Get Specific Cart",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{User-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}user/cart/get-Cart?cartId=661d0e0a472205c74519328e",
+									"host": [
+										"{{baseUrl}}user"
+									],
+									"path": [
+										"cart",
+										"get-Cart"
+									],
+									"query": [
+										{
+											"key": "cartId",
+											"value": "661d0e0a472205c74519328e"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Specific Cart",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7777/api/user/cart/get-Cart?cartId=661d0e0a472205c74519328e",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"user",
+												"cart",
+												"get-Cart"
+											],
+											"query": [
+												{
+													"key": "cartId",
+													"value": "661d0e0a472205c74519328e"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "471"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1d7-YnkpX7pilEi06Vcfs6umHeKuVJw\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 15 Apr 2024 11:26:10 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"661d0e0a472205c74519328e\",\n    \"user\": \"661932849bc942dc128c6ead\",\n    \"cartItem\": {\n        \"_id\": \"66193d09d22f406c9667b5e1\",\n        \"title\": \"MacBook Pro\",\n        \"description\": \"MacBook Pro 2021 with mini-LED display may launch between September, November..\",\n        \"price\": 1799,\n        \"category\": [\n            \"Laptops\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-12T13:54:17.688Z\",\n        \"updatedAt\": \"2024-04-12T13:54:17.688Z\"\n    },\n    \"quantity\": 3,\n    \"isDelete\": false,\n    \"createdAt\": \"2024-04-15T11:22:50.040Z\",\n    \"updatedAt\": \"2024-04-15T11:22:50.040Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Update Cart",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{User-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"quantity\":\"4\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}user/cart/update-Cart?cartId=661d0e0a472205c74519328e",
+									"host": [
+										"{{baseUrl}}user"
+									],
+									"path": [
+										"cart",
+										"update-Cart"
+									],
+									"query": [
+										{
+											"key": "cartId",
+											"value": "661d0e0a472205c74519328e"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Update Cart",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"quantity\":\"4\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:7777/api/user/cart/update-Cart?cartId=661d0e0a472205c74519328e",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"user",
+												"cart",
+												"update-Cart"
+											],
+											"query": [
+												{
+													"key": "cartId",
+													"value": "661d0e0a472205c74519328e"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "528"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"210-3hQUI8XGzZhZa61ajXJmP5QbjmI\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 15 Apr 2024 11:27:43 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"cart\": {\n        \"_id\": \"661d0e0a472205c74519328e\",\n        \"user\": \"661932849bc942dc128c6ead\",\n        \"cartItem\": {\n            \"_id\": \"66193d09d22f406c9667b5e1\",\n            \"title\": \"MacBook Pro\",\n            \"description\": \"MacBook Pro 2021 with mini-LED display may launch between September, November..\",\n            \"price\": 1799,\n            \"category\": [\n                \"Laptops\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-12T13:54:17.688Z\",\n            \"updatedAt\": \"2024-04-12T13:54:17.688Z\"\n        },\n        \"quantity\": 4,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-15T11:22:50.040Z\",\n        \"updatedAt\": \"2024-04-15T11:27:43.038Z\"\n    },\n    \"message\": \"Cart Item Updated SuccessFully.....\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete Cart",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{User-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}user/cart/delete-Cart?cartId=661d0e0a472205c74519328e",
+									"host": [
+										"{{baseUrl}}user"
+									],
+									"path": [
+										"cart",
+										"delete-Cart"
+									],
+									"query": [
+										{
+											"key": "cartId",
+											"value": "661d0e0a472205c74519328e"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete Cart",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7777/api/user/cart/delete-Cart?cartId=661d0e0a472205c74519328e",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"user",
+												"cart",
+												"delete-Cart"
+											],
+											"query": [
+												{
+													"key": "cartId",
+													"value": "661d0e0a472205c74519328e"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "523"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"20b-RSYSNId5oCvmPdq+TEWsd/uM73E\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 15 Apr 2024 11:28:44 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"cart\": {\n        \"_id\": \"661d0e0a472205c74519328e\",\n        \"user\": \"661932849bc942dc128c6ead\",\n        \"cartItem\": {\n            \"_id\": \"66193d09d22f406c9667b5e1\",\n            \"title\": \"MacBook Pro\",\n            \"description\": \"MacBook Pro 2021 with mini-LED display may launch between September, November..\",\n            \"price\": 1799,\n            \"category\": [\n                \"Laptops\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-12T13:54:17.688Z\",\n            \"updatedAt\": \"2024-04-12T13:54:17.688Z\"\n        },\n        \"quantity\": 4,\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-15T11:22:50.040Z\",\n        \"updatedAt\": \"2024-04-15T11:28:44.489Z\"\n    },\n    \"message\": \"Cart Deleted Successfully......\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Orders",
+					"item": [
+						{
+							"name": "Add To Order",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{User-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}user/order/add-New-Order",
+									"host": [
+										"{{baseUrl}}user"
+									],
+									"path": [
+										"order",
+										"add-New-Order"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Add To Order",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7777/api/user/order/add-New-Order",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"user",
+												"order",
+												"add-New-Order"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "584"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"248-GKb3SbPiQmS0NYEcD8F4wc4msp8\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 15 Apr 2024 12:27:21 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"newOrder\": {\n        \"user\": \"661932849bc942dc128c6ead\",\n        \"items\": [\n            {\n                \"product\": \"66193c8ed22f406c9667b5d5\",\n                \"quantity\": 2,\n                \"_id\": \"661d1d28de8275b47864080f\"\n            },\n            {\n                \"product\": \"66193dcfd22f406c9667b5f5\",\n                \"quantity\": 2,\n                \"_id\": \"661d1d28de8275b478640810\"\n            },\n            {\n                \"product\": \"66193e9ad22f406c9667b609\",\n                \"quantity\": 5,\n                \"_id\": \"661d1d28de8275b478640811\"\n            },\n            {\n                \"product\": \"66193d7ad22f406c9667b5ed\",\n                \"quantity\": 2,\n                \"_id\": \"661d1d28de8275b478640812\"\n            }\n        ],\n        \"totalAmount\": 4878,\n        \"isDelete\": false,\n        \"_id\": \"661d1d28de8275b47864080e\",\n        \"createdAt\": \"2024-04-15T12:27:20.971Z\",\n        \"updatedAt\": \"2024-04-15T12:27:20.971Z\"\n    },\n    \"message\": \"Order Place Successfuly...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Get All Order",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{User-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}user/order/get-All-Order",
+									"host": [
+										"{{baseUrl}}user"
+									],
+									"path": [
+										"order",
+										"get-All-Order"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Order",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7777/api/user/order/get-All-Order",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"user",
+												"order",
+												"get-All-Order"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1345"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"541-nXRN4B5EdhA/keUK9Gn+2xGwmc8\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 15 Apr 2024 12:28:09 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"661d1bacde8275b4786407dc\",\n        \"user\": \"661932849bc942dc128c6ead\",\n        \"items\": [\n            {\n                \"product\": \"66193c8ed22f406c9667b5d5\",\n                \"quantity\": 2,\n                \"_id\": \"661d1bacde8275b4786407dd\"\n            },\n            {\n                \"product\": \"66193dcfd22f406c9667b5f5\",\n                \"quantity\": 2,\n                \"_id\": \"661d1badde8275b4786407de\"\n            }\n        ],\n        \"totalAmount\": 2180,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-15T12:21:01.009Z\",\n        \"updatedAt\": \"2024-04-15T12:21:01.009Z\"\n    },\n    {\n        \"_id\": \"661d1c0ade8275b4786407eb\",\n        \"user\": \"661932849bc942dc128c6ead\",\n        \"items\": [\n            {\n                \"product\": \"66193c8ed22f406c9667b5d5\",\n                \"quantity\": 2,\n                \"_id\": \"661d1c0ade8275b4786407ec\"\n            },\n            {\n                \"product\": \"66193dcfd22f406c9667b5f5\",\n                \"quantity\": 2,\n                \"_id\": \"661d1c0ade8275b4786407ed\"\n            },\n            {\n                \"product\": \"66193e9ad22f406c9667b609\",\n                \"quantity\": 5,\n                \"_id\": \"661d1c0ade8275b4786407ee\"\n            }\n        ],\n        \"totalAmount\": 2680,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-15T12:22:34.833Z\",\n        \"updatedAt\": \"2024-04-15T12:22:34.833Z\"\n    },\n    {\n        \"_id\": \"661d1d28de8275b47864080e\",\n        \"user\": \"661932849bc942dc128c6ead\",\n        \"items\": [\n            {\n                \"product\": \"66193c8ed22f406c9667b5d5\",\n                \"quantity\": 2,\n                \"_id\": \"661d1d28de8275b47864080f\"\n            },\n            {\n                \"product\": \"66193dcfd22f406c9667b5f5\",\n                \"quantity\": 2,\n                \"_id\": \"661d1d28de8275b478640810\"\n            },\n            {\n                \"product\": \"66193e9ad22f406c9667b609\",\n                \"quantity\": 5,\n                \"_id\": \"661d1d28de8275b478640811\"\n            },\n            {\n                \"product\": \"66193d7ad22f406c9667b5ed\",\n                \"quantity\": 2,\n                \"_id\": \"661d1d28de8275b478640812\"\n            }\n        ],\n        \"totalAmount\": 4878,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-15T12:27:20.971Z\",\n        \"updatedAt\": \"2024-04-15T12:27:20.971Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "Get Specific Order",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{User-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}user/order/get-Order?orderId=661d1c0ade8275b4786407eb",
+									"host": [
+										"{{baseUrl}}user"
+									],
+									"path": [
+										"order",
+										"get-Order"
+									],
+									"query": [
+										{
+											"key": "orderId",
+											"value": "661d1c0ade8275b4786407eb"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Specific Order",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7777/api/user/order/get-Order?orderId=661d1c0ade8275b4786407eb",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"user",
+												"order",
+												"get-Order"
+											],
+											"query": [
+												{
+													"key": "orderId",
+													"value": "661d1c0ade8275b4786407eb"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "447"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1bf-LMLBYTl7lEM/34Nbrf7ouZ2qva4\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 15 Apr 2024 12:25:46 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"661d1c0ade8275b4786407eb\",\n    \"user\": \"661932849bc942dc128c6ead\",\n    \"items\": [\n        {\n            \"product\": \"66193c8ed22f406c9667b5d5\",\n            \"quantity\": 2,\n            \"_id\": \"661d1c0ade8275b4786407ec\"\n        },\n        {\n            \"product\": \"66193dcfd22f406c9667b5f5\",\n            \"quantity\": 2,\n            \"_id\": \"661d1c0ade8275b4786407ed\"\n        },\n        {\n            \"product\": \"66193e9ad22f406c9667b609\",\n            \"quantity\": 5,\n            \"_id\": \"661d1c0ade8275b4786407ee\"\n        }\n    ],\n    \"totalAmount\": 2680,\n    \"isDelete\": false,\n    \"createdAt\": \"2024-04-15T12:22:34.833Z\",\n    \"updatedAt\": \"2024-04-15T12:22:34.833Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete Order",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{User-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}user/order/get-Order?orderId=661d1bacde8275b4786407dc",
+									"host": [
+										"{{baseUrl}}user"
+									],
+									"path": [
+										"order",
+										"get-Order"
+									],
+									"query": [
+										{
+											"key": "orderId",
+											"value": "661d1bacde8275b4786407dc"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete Order",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7777/api/user/order/get-Order?orderId=661d1bacde8275b4786407dc",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"user",
+												"order",
+												"get-Order"
+											],
+											"query": [
+												{
+													"key": "orderId",
+													"value": "661d1bacde8275b4786407dc"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "362"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"16a-6j0vvY0fBuEHXWkyUGzdvW9ixNY\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 15 Apr 2024 12:29:52 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"661d1bacde8275b4786407dc\",\n    \"user\": \"661932849bc942dc128c6ead\",\n    \"items\": [\n        {\n            \"product\": \"66193c8ed22f406c9667b5d5\",\n            \"quantity\": 2,\n            \"_id\": \"661d1bacde8275b4786407dd\"\n        },\n        {\n            \"product\": \"66193dcfd22f406c9667b5f5\",\n            \"quantity\": 2,\n            \"_id\": \"661d1badde8275b4786407de\"\n        }\n    ],\n    \"totalAmount\": 2180,\n    \"isDelete\": false,\n    \"createdAt\": \"2024-04-15T12:21:01.009Z\",\n    \"updatedAt\": \"2024-04-15T12:21:01.009Z\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Reviews",
+					"item": [
+						{
+							"name": "Add New Review",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{User-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"product\":\"66193dcfd22f406c9667b5f5\",\r\n     \"comment\":\"Brown Perfume is a Nice Perfume.\",\r\n     \"rating\":5\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}user/review/add-New-Review",
+									"host": [
+										"{{baseUrl}}user"
+									],
+									"path": [
+										"review",
+										"add-New-Review"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Add New Review",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"product\":\"66193dcfd22f406c9667b5f5\",\r\n     \"comment\":\"Brown Perfume is a Nice Perfume.\",\r\n     \"rating\":5\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:7777/api/user/review/add-New-Review",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"user",
+												"review",
+												"add-New-Review"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "298"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"12a-atoskMkfYWfMPmWOWWRwAUKsO8c\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 15 Apr 2024 12:55:01 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"review\": {\n        \"user\": \"661932849bc942dc128c6ead\",\n        \"product\": \"66193dcfd22f406c9667b5f5\",\n        \"rating\": 5,\n        \"comment\": \"Brown Perfume is a Nice Perfume.\",\n        \"isDelete\": false,\n        \"_id\": \"661d23a5365d2b78512d7eeb\",\n        \"createdAt\": \"2024-04-15T12:55:01.649Z\",\n        \"updatedAt\": \"2024-04-15T12:55:01.649Z\"\n    },\n    \"Message\": \"Review is Added...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Get All Review",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{User-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}user/review/get-All-Review",
+									"host": [
+										"{{baseUrl}}user"
+									],
+									"path": [
+										"review",
+										"get-All-Review"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Review",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7777/api/user/review/get-All-Review",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"user",
+												"review",
+												"get-All-Review"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "770"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"302-ZNjtRXA67eP0wMFlWRmBrzvCdpg\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 15 Apr 2024 12:58:17 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"661d23a5365d2b78512d7eeb\",\n        \"user\": \"661932849bc942dc128c6ead\",\n        \"product\": \"66193dcfd22f406c9667b5f5\",\n        \"rating\": 5,\n        \"comment\": \"Brown Perfume is a Nice Perfume.\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-15T12:55:01.649Z\",\n        \"updatedAt\": \"2024-04-15T12:55:01.649Z\"\n    },\n    {\n        \"_id\": \"661d23f5365d2b78512d7eef\",\n        \"user\": \"661932849bc942dc128c6ead\",\n        \"product\": \"66193c8ed22f406c9667b5d5\",\n        \"rating\": 4.5,\n        \"comment\": \"Latest and Fastest Smartphone.\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-15T12:56:21.562Z\",\n        \"updatedAt\": \"2024-04-15T12:56:21.562Z\"\n    },\n    {\n        \"_id\": \"661d2424365d2b78512d7ef3\",\n        \"user\": \"661932849bc942dc128c6ead\",\n        \"product\": \"66193e9ad22f406c9667b609\",\n        \"rating\": 4.5,\n        \"comment\": \"Healthy and Sweet Fruitnuts.\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-15T12:57:08.562Z\",\n        \"updatedAt\": \"2024-04-15T12:57:08.562Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "Delete Review",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{User-Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}user/review/delete-Review?Id=661d2424365d2b78512d7ef3",
+									"host": [
+										"{{baseUrl}}user"
+									],
+									"path": [
+										"review",
+										"delete-Review"
+									],
+									"query": [
+										{
+											"key": "Id",
+											"value": "661d2424365d2b78512d7ef3"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete Review",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7777/api/user/review/delete-Review?Id=661d2424365d2b78512d7ef3",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"user",
+												"review",
+												"delete-Review"
+											],
+											"query": [
+												{
+													"key": "Id",
+													"value": "661d2424365d2b78512d7ef3"
+												}
+											]
+										}
+									},
+									"status": "Accepted",
+									"code": 202,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "310"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"136-pMEJRDfpRDrxyFH/ppcijpebAJE\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 15 Apr 2024 13:00:24 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"review\": {\n        \"_id\": \"661d2424365d2b78512d7ef3\",\n        \"user\": \"661932849bc942dc128c6ead\",\n        \"product\": \"66193e9ad22f406c9667b609\",\n        \"rating\": 4.5,\n        \"comment\": \"Healthy and Sweet Fruitnuts.\",\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-15T12:57:08.562Z\",\n        \"updatedAt\": \"2024-04-15T13:00:24.486Z\"\n    },\n    \"Message\": \"Review is Deleted SuccessFully...\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Contacts",
+					"item": [
+						{
+							"name": "Send Request User",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjE5MzU1OTliYzk0MmRjMTI4YzZlZTciLCJpYXQiOjE3MTMzMjIzNjB9.ov-MIzDhFDLjZ78V_L5ayQqKwnl1865TAe_LTXH4t9k",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Denver\",\r\n    \"email\":\"denver777@test.in\",\r\n    \"phone\":7777777777,\r\n    \"message\":\"Nice Product...\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}user/contact/send-Request-User",
+									"host": [
+										"{{baseUrl}}user"
+									],
+									"path": [
+										"contact",
+										"send-Request-User"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Send Request User",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\":\"Denver\",\r\n    \"email\":\"denver777@test.in\",\r\n    \"phone\":7777777777,\r\n    \"message\":\"Nice Product...\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:7777/api/user/contact/send-Request-User",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7777",
+											"path": [
+												"api",
+												"user",
+												"contact",
+												"send-Request-User"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "292"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"124-GmGjpZQvmJbCsSaL1YSnno90tOc\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 17 Apr 2024 02:54:40 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"admin\": {\n        \"user\": \"661935599bc942dc128c6ee7\",\n        \"name\": \"Denver\",\n        \"email\": \"denver777@test.in\",\n        \"phone\": 7777777777,\n        \"message\": \"Nice Product...\",\n        \"_id\": \"661f39f0a5b8ff82eba3de03\",\n        \"createdAt\": \"2024-04-17T02:54:40.094Z\",\n        \"updatedAt\": \"2024-04-17T02:54:40.094Z\"\n    },\n    \"message\": \"New Request added SuccesFully...\"\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Admin-Token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjYxOTE3NDVhMmZjNGE5NDVlMTg0NjI4IiwiaWF0IjoxNzEyOTIwNjgwfQ.0B2Ds-UA3mvzIqCdfdAxxolwPE330sC8T4bzqYnPWUk",
+			"type": "string"
+		},
+		{
+			"key": "User-Token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjE5MzI4NDliYzk0MmRjMTI4YzZlYWQiLCJpYXQiOjE3MTI5Mjc0NDd9.CePqQi9F_KvXVBlw75FUxoL8dp_ekQVI4OLAqIZXi3A",
+			"type": "string"
+		},
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:7777/api/"
+		}
+	]
+}
